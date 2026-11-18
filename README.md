@@ -1,6 +1,6 @@
 # ARPG Prototype
 
-A 3D roguelike action-RPG prototype made in Godot 4.7. You fight down through randomly generated floors across six biomes: jungle, desert, city, dungeon, castle and abyss. Each floor ends with a guardian boss. You're expected to die, then return to camp, spend what you brought back, and go again.
+A 3D roguelike action-RPG prototype made in Godot 4.7. You fight down through randomly generated floors across six biomes: jungle, desert, city, dungeon, castle and abyss. Each floor is a large map with a fixed set of enemy packs to clear, ending with an elemental guardian. You're expected to die, then return to camp, grow your permanent skill tree, take on quests from the camp's characters, and go again.
 
 **Download:** see [Releases](../../releases). Pick the Windows `.zip` or the Linux `.tar.gz`.
 
@@ -10,19 +10,25 @@ A 3D roguelike action-RPG prototype made in Godot 4.7. You fight down through ra
 
 **Requirements:** a 64-bit OS and a GPU with Vulkan support (Windows can also use Direct3D 12). If neither is available, the game falls back to OpenGL with simpler visuals. You can pick a graphics preset (Low to Ultra) under Settings.
 
-## Controls (default; everything can be rebound in Settings, including mouse buttons)
+## Controls (default; keyboard and mouse can be rebound in Settings)
 | Action | Keyboard / mouse | Gamepad |
 |---|---|---|
-| Move | WASD | Left stick |
-| Aim | Mouse | Right stick |
-| Primary attack | Left mouse (hold) | RT |
-| Dash | Space | B |
+| Move / aim | WASD or click / mouse | Left stick / right stick |
+| Primary attack | Left mouse (hold) | RT or LT (hold) |
 | Spells | Q E R F | X Y LB RB |
-| Interact | Space | A |
+| Dash | Space | B |
 | Ultimate (once charged) | G | LB + RB together |
-| Skill tree | K | (from the pause menu) |
+| Interact | Space | A |
+| Skill tree (view-only during runs) | K | D-pad Up |
+| Quest log | J | Pause menu |
 | Inventory and spellbook | Tab | View |
+| Stats / map | C / M | |
 | Menu (settings, abandon run, quit to menu) | Esc | Start |
+
+## Progression
+- **Essence:** earned every run. Spend it at the camp Altar on permanent skill-tree nodes (Fire, Poison, Frost) and new spells.
+- **Legendary shards:** salvage a legendary item to get one. Use them during runs to reforge or empower gear, and at the forge to upgrade heirlooms.
+- **Deeds:** earned from camp quests and first guardian kills. They unlock auras, starting kits, heirloom slots and ultimates (each guardian's heart unlocks one).
 
 ## Status
 This is an early prototype, so expect rough edges and balance changes. Saves are stored in your user data folder: `%APPDATA%\Godot\app_userdata\ARPG Prototype` on Windows and `~/.local/share/godot/app_userdata/ARPG Prototype` on Linux.
