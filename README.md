@@ -16,9 +16,11 @@ A 3D roguelike action-RPG prototype made in Godot 4.7. You fight down through ra
 | Move | WASD | Left stick |
 | Aim | Mouse | Right stick |
 | Primary attack | Left mouse (hold) | RT |
-| Dash | Space | |
+| Dash | Space | B |
 | Spells | Q E R F | X Y LB RB |
 | Interact | Space | A |
+| Ultimate (once charged) | G | LB + RB together |
+| Skill tree | K | (from the pause menu) |
 | Inventory and spellbook | Tab | View |
 | Menu (settings, abandon run, quit to menu) | Esc | Start |
 
